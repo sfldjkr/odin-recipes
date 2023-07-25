@@ -4,44 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to make burger</title>
-    <style>
-        body {
-            font-family: sans-serif;
-        }
-        ul , ol {
-            display: inline-block;
-            text-align: left;
-        }
-    </style>
+    <link href="./statics/recipy.css" rel="stylesheet">
+    
 </head>
-<body style="text-align: center;">
-    <h1>Burger</h1>
-    <img src="images/burger.jpg" alt="Burger Pitcure">
+<body>
+    <div class="boxe">
+        <h1 id="burger">Burger</h1>
+        <img src="data:image/jpeg;base64,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" alt="Burger Pitcure">
+    </div>
     <br><br>
-    <h2>Description</h2>
-    <p><em>This smash burger recipe makes super juicy burgers with crispy edges. Don't use meat that is leaner than 80/20 for best results, and make sure the meat is very cold. I prefer to cook these outdoors to avoid smoking up the kitchen. These grill up very fast because of the high heat, so make sure you have everything ready to go!</em></p>
+
+    <div class="description">
+        <h2>Description</h2>
+        <p><em>This smash burger recipe makes super juicy burgers with crispy edges. Don't use meat that is leaner than 80/20 for best results, and make sure the meat is very cold. I prefer to cook these outdoors to avoid smoking up the kitchen. These grill up very fast because of the high heat, so make sure you have everything ready to go!</em></p>
+
+    </div>
     <br>
-    <h2>Ingredients</h2>
-    <ul style="list-style-type: square;">
-            <em>
-                <li>4 hamburger buns</li>
-                <li>2 tablespoons butter, softened, or as needed</li>
-                <li>1 pound ground chuck beef (80% lean)</li>
-                <li>4 6-inch squares parchment paper</li>
-                <li>salt to taste</li>
-                <li>4 slices American cheese</li>
-                <li>burger toppings of choice</li>
-            </em>
-    </ul>
-    <br>
-    <h2>Steps</h2>
-    <ol>
-        <em>
-            <li>Preheat an outdoor grill for high heat and lightly oil the grate. Set a cast iron flat-top griddle or large cast iron skillet onto the grill and preheat until smoking.</li>
-            <li>Spread butter on the inside of the buns and toast on the flat-top until lightly browned. Set aside.</li>
-            <li>Form meat into 8 loosely-packed balls, 2 ounces each. Do not pack the meat tightly, as this will prevent it from smashing properly. Place each ball on the hot flat-top, cover with a piece of parchment (to prevent sticking to the spatula; re-use each parchment square on a second patty) and immediately smash down to a 1/4 inch thickness using 2 stiff, sturdy spatulas that are criss-crossed to get proper leverage as you press down. You may also use the bottom of small skillet. Sprinkle the meat with salt.</li>
-            <li>Grill for about 45 seconds, until the edges are dark brown and the centers are a light pink color. Using a bench scraper or firm spatula, gently scrape up the patties, flip over and immediately cover 4 of them with cheese. Grill an additional 15 to 20 seconds; stack the plain patties over the cheese-covered patties so you have 4 stacks. Move each stack to a bun and serve with your favorite toppings.</li>
-        </em>
-    </ol>
+    <div class="box">
+                <div class="ingredients">
+                    <h2>Ingredients</h2>
+                    <ul style="list-style-type: square;">
+                            <em>
+                                <li>4 hamburger buns</li>
+                                <li>2 tablespoons butter, softened, or as needed</li>
+                                <li>1 pound ground chuck beef (80% lean)</li>
+                                <li>4 6-inch squares parchment paper</li>
+                                <li>salt to taste</li>
+                                <li>4 slices American cheese</li>
+                                <li>burger toppings of choice</li>
+                            </em>
+                    </ul>
+            </div>
+            <br>
+            <div class="steps">
+                <h2>Steps</h2>
+                    <ol>
+                        <em>
+                            <li>Preheat an outdoor grill for high heat and lightly oil the grate. Set a cast iron flat-top griddle or large cast iron skillet onto the grill and preheat until smoking.</li>
+                            <li>Spread butter on the inside of the buns and toast on the flat-top until lightly browned. Set aside.</li>
+                            <li>Form meat into 8 loosely-packed balls, 2 ounces each. Do not pack the meat tightly, as this will prevent it from smashing properly. Place each ball on the hot flat-top, cover with a piece of parchment (to prevent sticking to the spatula; re-use each parchment square on a second patty) and immediately smash down to a 1/4 inch thickness using 2 stiff, sturdy spatulas that are criss-crossed to get proper leverage as you press down. You may also use the bottom of small skillet. Sprinkle the meat with salt.</li>
+                            <li>Grill for about 45 seconds, until the edges are dark brown and the centers are a light pink color. Using a bench scraper or firm spatula, gently scrape up the patties, flip over and immediately cover 4 of them with cheese. Grill an additional 15 to 20 seconds; stack the plain patties over the cheese-covered patties so you have 4 stacks. Move each stack to a bun and serve with your favorite toppings.</li>
+                        </em>
+                    </ol>
+            </div>
+    </div>
+    
 </body>
 </html>

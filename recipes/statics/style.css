@@ -1,0 +1,29 @@
+body {
+    color: white;
+    font-weight: bold;;
+    text-align: center;
+    background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/02/11/Soft-color-mixed-watercolor-background-Graphics-60814145-1.jpg');
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+
+}
+
+
+
+#maindiv {
+    background-color: rgba(255, 182, 193, 0.7);
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 250px;
+    margin-right: 0px;
+    margin-left: 0px;
+    
+}
+
+a {
+    color: white;
+}
+
+li:hover {
+    transform: scale(1.5);
+    padding: 5px;
+}
